@@ -68,7 +68,7 @@ User stories are listed below in tabular format:
 
 | ID     | Requirement                                                                      |
 |--------|----------------------------------------------------------------------------------|
-| NFR01  | API queries must return responses in < 2 seconds for common queries              |
+| NFR01  | Under normal test conditions, the API should respond to common queries in a reasonable time (ideally under 3 seconds).           |
 | NFR02  | Database must support indexing for spatial and temporal filtering                |
 | NFR03  | Data must be returned in a valid, structured JSON schema                         |
 | NFR04  | Jupyter dashboard must provide responsive, user-friendly visualizations          |
