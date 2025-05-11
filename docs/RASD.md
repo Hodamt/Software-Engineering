@@ -52,14 +52,15 @@ User stories are listed below in tabular format:
 | ID    | Role         | User Story                                                                                     | Priority |
 |-------|--------------|-----------------------------------------------------------------------------------------------|----------|
 | US01  | Developer     | As a developer, I want to ingest air quality and sensor data, so I can store it in a database. | High     |
-| US02  | Developer     | As a developer, I want to configure the database schema, so it supports spatial/time queries. | High     |
-| US03  | Public User   | As a public user, I want to query data by time/location, so I can view air quality information.| High     |
-| US04  | Public User   | As a public user, I want to view pollutant levels on a map and in charts.                    | High     |
-| US05  | Public User   | As a public user, I want to filter data by pollutant or date, so I can customize my view.     | Medium   |
-| US06  | Public User   | As a public user, I want to export data, so I can save it for later use.                      | Medium   |
-| US07  | Analyst       | As an analyst, I want to generate statistical reports, so I can interpret pollution trends.   | High     |
-| US08  | Analyst       | As an analyst, I want to perform spatial queries, so I can study pollution within custom areas.| High     |
-| US09  | Analyst       | As an analyst, I want to export time-series data in a clean format, so I can analyze it offline.| High     |
+| US02  | Developer     | As a developer,  I want to maintain the API system easily, so I can update the code, monitor its performance, debug errors, and deploy new versions without disrupting the current service. | High     |
+| US03  | Developer     | As a developer, I want to configure the database schema, so it supports spatial/time queries. | High     |
+| US04 | Public User   | As a public user, I want to query data by time/location, so I can view air quality information.| High     |
+| US05 | Public User   | As a public user, I want to view pollutant levels on a map and in charts.                    | High     |
+| US06  | Public User   | As a public user, I want to filter data by pollutant or date, so I can customize my view.     | Medium   |
+| US07  | Public User   | As a public user, I want to export data, so I can save it for later use.                      | Medium   |
+| US08  | Analyst       | As an analyst, I want to generate statistical reports, so I can interpret pollution trends.   | High     |
+| US09  | Analyst       | As an analyst, I want to perform spatial queries, so I can study pollution within custom areas.| High     |
+| US10  | Analyst       | As an analyst, I want to export time-series data in a clean format, so I can analyze it offline.| High     |
 
 ---
 
