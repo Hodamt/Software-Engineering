@@ -43,7 +43,8 @@ Firoozeh Rahimian
   - [7.1 Unit Testing](#71-unit-testing)
   - [7.2 Integration Testing](#72-integration-testing)
   - [7.3 User Testing](#73-user-testing)
-- [8. Conclusion](#8-conclusion)
+- [8. Traceability Matrix](#8-traceability-matrix)
+- [9. Conclusion](#9-conclusion)
 
 The DD excludes:
 - Detailed code implementations or code snippets.
@@ -268,8 +269,25 @@ The dashboard, implemented in a Jupyter Notebook (`dashboard/dashboard.ipynb`), 
 - Check visualization accuracy (e.g., PM2.5 trends match raw data).
 
 ---
+## 8. Traceability Matrix
 
-## 8. Conclusion
+The following matrix ensures that each user story identified in the RASD is properly addressed by at least one design element within the system architecture, database, API, or dashboard.
+
+| **User Story ID** | **Role**       | **User Story (Summary)**                                                             | **Design Element**                                                                 |
+|------------------|----------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| US01             | Developer      | Ingest air quality and sensor data                                                  | 3.4 Data Ingestion, 3.1 Overview                                                   |
+| US02             | Developer      | Configure DB schema with spatial/time support                                       | 3.2 Schema, 3.3 Indexes                                                            |
+| US03             | Public User    | Query data by time/location                                                         | 4.2 GET /measurements, 5.2 Features                                                |
+| US04             | Public User    | View pollutant levels on maps and charts                                            | 5.2 Interactive Map, Time-Series Charts                                            |
+| US05             | Public User    | Filter data by pollutant/date                                                       | 5.2 Filters, 5.3 Data Flow                                                         |
+| US06             | Public User    | Export data                                                                          | 5.2 Custom Views, Export CSV option                                                |
+| US07             | Analyst        | Generate statistical reports                                                        | 4.2 GET /stats, 5.2 Statistical Summaries                                          |
+| US08             | Analyst        | Perform spatial queries (e.g., within a province)                                   | 3.3 GIST Index, 5.2 Map Interaction, 3.1 PostGIS support                           |
+| US09             | Analyst        | Export time-series data                                                             | 5.2 Time-Series Charts + Export, 5.3 JSON via API                                  |
+
+---
+
+## 9. Conclusion
 This Design Document provides a comprehensive plan for implementing the SE4GEO air quality analysis system. The PostgreSQL/PostGIS database efficiently stores and queries data, the Flask REST API enables flexible data retrieval, and the Jupyter Notebook dashboard delivers intuitive visualizations. The design aligns with the RASD requirements, ensuring stakeholders can monitor pollution trends and assess public health risks in Lombardy.
 
 ---
