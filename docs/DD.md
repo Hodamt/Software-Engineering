@@ -273,3 +273,18 @@ The dashboard, implemented in a Jupyter Notebook (`dashboard/dashboard.ipynb`), 
 This Design Document provides a comprehensive plan for implementing the SE4GEO air quality analysis system. The PostgreSQL/PostGIS database efficiently stores and queries data, the Flask REST API enables flexible data retrieval, and the Jupyter Notebook dashboard delivers intuitive visualizations. The design aligns with the RASD requirements, ensuring stakeholders can monitor pollution trends and assess public health risks in Lombardy.
 
 ---
+## 9. Traceability Matrix
+
+The following matrix ensures that each user story identified in the RASD is properly addressed by at least one design element within the system architecture, database, API, or dashboard.
+
+| **User Story ID** | **Role**       | **User Story (Summary)**                                                             | **Design Element**                                                                 |
+|------------------|----------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| US01             | Developer      | Ingest air quality and sensor data                                                  | 3.4 Data Ingestion, 3.1 Overview                                                   |
+| US02             | Developer      | Configure DB schema with spatial/time support                                       | 3.2 Schema, 3.3 Indexes                                                            |
+| US03             | Public User    | Query data by time/location                                                         | 4.2 GET /measurements, 5.2 Features                                                |
+| US04             | Public User    | View pollutant levels on maps and charts                                            | 5.2 Interactive Map, Time-Series Charts                                            |
+| US05             | Public User    | Filter data by pollutant/date                                                       | 5.2 Filters, 5.3 Data Flow                                                         |
+| US06             | Public User    | Export data                                                                          | 5.2 Custom Views, Export CSV option                                                |
+| US07             | Analyst        | Generate statistical reports                                                        | 4.2 GET /stats, 5.2 Statistical Summaries                                          |
+| US08             | Analyst        | Perform spatial queries (e.g., within a province)                                   | 3.3 GIST Index, 5.2 Map Interaction, 3.1 PostGIS support                           |
+| US09             | Analyst        | Export time-series data                                                             | 5.2 Time-Series Charts + Export, 5.3 JSON via API                                  |
