@@ -121,7 +121,10 @@ Then open your browser at:
 - Internet browser (Chrome, Firefox, etc.)
 
 ## 👨‍💻 Authors
+- Sadra Zahed Kachaee  
+- Hananeh Asadi Aghbolaghi  
+- Hoda Sadat Mousavi Tabar  
+- Firoozeh Rahimian
 
-Developed as part of the **SE4GEO** course at *Politecnico di Milano*.
 
 
